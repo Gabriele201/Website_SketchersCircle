@@ -192,3 +192,26 @@ footer p {
 .button-group button:hover {
     background-color: #364d38; 
 }
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.stat h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.counter {
+    font-size: 60px; 
+    font-weight: bold;
+    color: #88b836;
+    transition: all 0.5s ease-in-out; 
+    text-shadow: 0 0 15px rgba(136, 184, 54, 1), 0 0 30px rgba(136, 184, 54, 0.5); 
+}
