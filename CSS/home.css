@@ -1,18 +1,28 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+.header-bg {
+    position: relative; 
+    background-image: url('../assets/bg_home.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+
 header {
+    position: relative; 
+    z-index: 1; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #151007;
+    background-color: rgba(21, 16, 7, 0.8); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,14 +61,13 @@ nav {
 }
 
 .navbar a {
-    text-decoration: none;
+    text-decoration: none; 
     color: #fff;
-    position: relative;
-    transition: color 0.3s;
+    transition: color 0.3s; 
 }
 
 .navbar a:hover {
-    color: #88b836;
+    color: #88b836; 
 }
 
 .join-btn {
@@ -87,15 +96,8 @@ nav {
     transform: scale(1.1);
 }
 
-.highlight {
-    height: 3px;
-    background-color: #88b836;
-    box-shadow: 0 0 10px rgba(136, 183, 54, 0.5);
-    transition: all 0.3s ease;
-}
-
 footer {
-    background-color: #151007;
+    background-color: rgba(21, 16, 7, 0.8);
     text-align: center;
     padding: 20px 0;
     margin-top: auto;
@@ -123,4 +125,70 @@ footer p {
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     margin: 10px 0 0;
+}
+
+.plane {
+    position: absolute; 
+    bottom: 0; 
+    right: 20px; 
+    width: 400px; 
+    animation: fly 7s linear infinite; 
+    opacity: 1; 
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100vw); 
+    }
+}
+
+.hero-title {
+    position: absolute;
+    top: 8%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #151007; 
+    padding: 20px 10px; 
+    max-width: 80%; 
+    overflow: hidden; 
+}
+
+.hero-title h1 {
+    font-size: 48px; 
+    font-weight: bold; 
+    margin: 5px 0; 
+}
+
+.hero-title h2 {
+    font-size: 64px; 
+    font-style: italic; 
+    margin: 5px 0; 
+}
+
+.hero-title p {
+    font-size: 20px; 
+    margin: 5px 0; 
+}
+
+.button-group {
+    margin-top: 40px; 
+}
+
+.button-group button {
+    background-color: #88b836; 
+    color: white; 
+    border: none;
+    padding: 12px 20px;
+    margin: 0 10px; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #364d38; 
 }
