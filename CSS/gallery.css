@@ -1,7 +1,8 @@
+/*navbar*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -87,13 +88,7 @@ nav {
     transform: scale(1.1);
 }
 
-.highlight {
-    height: 3px;
-    background-color: #88b836;
-    box-shadow: 0 0 10px rgba(136, 183, 54, 0.5);
-    transition: all 0.3s ease;
-}
-
+/*footer*/
 footer {
     background-color: #151007;
     text-align: center;
@@ -123,4 +118,56 @@ footer p {
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     margin: 10px 0 0;
+}
+
+
+/*gallery*/
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    margin: 50px; 
+}
+
+.gallery-container {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.gallery-image {
+    width: 400px;
+    height: auto;
+    margin-right: 50px; 
+}
+
+.text-container {
+    max-width: 500px; 
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+.header {
+    font-size: 25px; 
+    color: #fff;
+    margin: 10px 0; 
+}
+
+.title {
+    font-size: 60px; 
+    font-style: italic; 
+    color: #fff;
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.5), 
+        0 0 7px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.3), 
+        0 0 15px rgba(255, 255, 255, 0.2); 
+    margin: 0; 
+}
+
+.description {
+    font-size: 15px; 
+    color: #fff;
+    margin-top: 20px;
 }
