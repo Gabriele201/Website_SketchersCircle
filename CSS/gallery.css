@@ -126,7 +126,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: flex-start; 
-    margin: 50px; 
+    margin: 110px; 
 }
 
 .gallery-container {
@@ -170,4 +170,110 @@ footer p {
     font-size: 15px; 
     color: #fff;
     margin-top: 20px;
+}
+
+.featured-sketchers {
+    margin-top: 70px; 
+    margin-left: 70px;
+    text-align: left; 
+}
+
+.featured-header,
+.featured-title {
+    color: #c7ddb5; 
+    margin: 10px 0 0 50px; 
+}
+
+.featured-title {
+    font-size: 40px; 
+    margin: 0 0 0 50px; 
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.5), 
+        0 0 7px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.3), 
+        0 0 15px rgba(255, 255, 255, 0.2); 
+}
+
+.voting-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: -90px;
+}
+
+.voting-box {
+    background-color: #658354; 
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.voting-box h4,
+.voting-box h3,
+.voting-box p {
+    margin: 5px 0; 
+    padding: 0;    
+}
+
+.sketcher-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.featured-sketches2 {
+    margin-top: 70px; 
+    margin-left: 70px;
+    text-align: left; 
+}
+
+.featured-header2,
+.featured-title2 {
+    color: #c7ddb5;
+    margin: 10px 0 0 50px; 
+}
+
+.featured-title2 {
+    font-size: 40px; 
+    margin: 0 0 0 50px; 
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.5), 
+        0 0 7px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.3), 
+        0 0 15px rgba(255, 255, 255, 0.2); 
+}
+
+.voting-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: -90px;
+}
+
+.voting-box {
+    background-color: #658354; 
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.voting-box h4,
+.voting-box h3,
+.voting-box p {
+    margin: 5px 0; 
+    padding: 0;    
+}
+
+.sketcher-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
