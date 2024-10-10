@@ -19,3 +19,16 @@ sidebarLinks.forEach(link => {
         this.classList.add('active'); 
     });
 });
+
+//votes
+const voteButtons = document.querySelectorAll('.vote-btn');
+
+voteButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const totalVoted = button.previousElementSibling; 
+        let currentVotes = parseInt(totalVoted.innerText.split(': ')[1]);
+        currentVotes++;
+        totalVoted.innerText = `Total voted: ${currentVotes}`;
+        alert('Thank you for voting!');
+    });
+});
