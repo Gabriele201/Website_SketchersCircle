@@ -19,3 +19,9 @@ sidebarLinks.forEach(link => {
         this.classList.add('active'); 
     });
 });
+
+//forum
+function followThread(event) {
+    event.stopPropagation(); 
+    alert('You are now following this forum thread!'); 
+}
