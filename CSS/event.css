@@ -167,3 +167,72 @@ footer p {
     width: 25px; 
     height: auto;
 }
+
+.ticket-container {
+    max-width: 1500px; 
+    margin: 20px auto; 
+    padding: 20px; 
+}
+
+.ticket-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; 
+}
+
+.ticket {
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    display: flex; 
+    align-items: center;
+    width: calc(50% - 10px); 
+}
+
+.ticket-image {
+    width: 190px; 
+    height: auto;
+    margin-right: 15px; 
+}
+
+.ticket-info {
+    flex-grow: 1; 
+    margin: -25px 5px 5px 5px;
+}
+
+.ticket-name {
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+.ticket-place {
+    font-weight: bold;
+    font-size: 15px; 
+    margin-top: -15px;
+}
+
+.ticket-details {
+    margin: 5px 0; 
+}
+
+.ticket-date,
+.ticket-time {
+    font-size: 14px; 
+    color: #666; 
+    margin-bottom: -10px;
+}
+
+.get-ticket-btn {
+    background-color: #88b836; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.get-ticket-btn:hover {
+    background-color: #364d38; 
+    transform: scale(1.05);
+}
