@@ -205,15 +205,47 @@ footer p {
     margin-right: 10px; 
 }
 
+.layout {
+    display: flex; 
+}
+
+/*call to action*/
 .content {
     flex: 1; 
+    position: relative; 
     padding: 20px; 
     color: #fff; 
     border-radius: 5px; 
     margin: 15px;
     margin-left: 15px; 
+    overflow: hidden; 
 }
 
-.layout {
-    display: flex; 
+.bg-overlay {
+    background-image: url('../assets/bg_tambahan.png');
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.call-to-action {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+.cta-text {
+    font-size: var(--cta-text-size, 24px); 
+    color: #fff; 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    border-radius: 5px;
 }
