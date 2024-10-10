@@ -135,8 +135,6 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
     color: #151007; 
-    display: flex; 
-    flex-direction: column;
 }
 
 .profile {
@@ -186,15 +184,6 @@ footer p {
     color: #4b6043; 
 }
 
-.sidebar {
-    width: 250px; 
-    background-color: #658354; 
-    padding: 20px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 15px; 
-    color: #151007; 
-}
-
 .content {
     padding-left: 270px; 
 }
@@ -216,4 +205,98 @@ footer p {
 
 .layout {
     display: flex; 
+}
+
+/*votes*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin-bottom: 20px;
+    position: relative;     
+}
+
+.vote-header {
+    font-size: 36px; 
+    color: #fff;
+    text-align: center;
+    margin-right: 10px; 
+    position: relative;  
+    z-index: 1;         
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.5), 
+        0 0 7px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.3), 
+        0 0 15px rgba(255, 255, 255, 0.2); 
+}
+
+.moon-container {
+    position: absolute; 
+    right: 0;         
+    top: 50%;         
+    transform: translateY(-50%); 
+}
+
+.moon-img {
+    width: 140px;      
+    height: auto;
+    opacity: 0.5;    
+    animation: rotate 10s infinite linear;
+    margin-top: 0px;
+    margin-right: 180px;
+}
+
+.voting-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.voting-box {
+    background-color: rgba(255, 255, 255, 0.3); 
+
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color:#fff;
+}
+
+.voting-box h4,
+.voting-box h3,
+.voting-box p {
+    margin: 5px 0; 
+    padding: 0;    
+}
+
+.sketcher-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.vote-btn {
+    background-color: #88b836;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 25px;
+}
+
+.vote-btn:hover {
+    background-color: #364d38;
 }
