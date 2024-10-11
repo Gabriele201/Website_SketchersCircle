@@ -119,3 +119,55 @@ footer p {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     margin: 10px 0 0;
 }
+
+/*tutorial*/
+.tutorial-section {
+    padding: 30px;
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+}
+
+.tutorial-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(136, 184, 54, 0.8); 
+    text-transform: uppercase;
+}
+
+.tutorial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #444; 
+    border-radius: 8px;
+    background-color: #222; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.tutorial video {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #444; 
+}
+
+.tutorial-info {
+    margin-left: 15px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.tutorial-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.tutorial-info p {
+    font-size: 14px;
+    color: #ccc; 
+}
