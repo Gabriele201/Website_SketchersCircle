@@ -1,3 +1,4 @@
+//navbar
 const links = document.querySelectorAll('.navbar a');
 const highlight = document.querySelector('.highlight');
 
