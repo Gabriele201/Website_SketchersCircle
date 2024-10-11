@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/bg_tambahan2.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 20px; 
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    max-width: 450px; 
+    width: 100%; 
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+p {
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.remember-me {
+    display: flex;
+    align-items: center; 
+    padding-bottom: 20px; 
+}
+
+button {
+    background-color: #628b35; 
+    color: white; 
+    padding: 10px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #4a6628; 
+}
+
+.signup-link {
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+.signup-link a {
+    color: #628b35;
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Urban Sketchers</title>
+    <link rel="stylesheet" href="../CSS/sign_in.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Welcome back, Urban Sketcher!</h2>
+            <p>Please log in to continue your artistic journey</p>
+            <form id="signInForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                
+                <button type="submit">Sign In</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="sign_up.html">Sign up now!</a></p>
+        </div>
+    </div>
+    <script src="../JS/sign_in.js"></script>
+</body>
+</html>
