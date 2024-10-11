@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Urban Sketchers</title>
+    <link rel="stylesheet" href="../CSS/sign_in.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Create your account!</h2>
+            <p>Join community of urban sketchers and start sharing your art</p>
+            <form id="signUpForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+
+                <div class="privacy-policy">
+                    <input type="checkbox" id="privacyPolicy" required>
+                    <label for="privacyPolicy" style="display: inline;">I agree to the Privacy Policy and Terms of Service</label>
+                </div>
+
+                <button type="submit" style="margin-top: 20px;">Sign Up</button>
+            </form>
+            <p class="signup-link">Already have an account? <a href="sign_in.html">Sign in now!</a></p>
+        </div>
+    </div>
+    <script src="../JS/sign_up.js"></script>
+</body>
+</html>
